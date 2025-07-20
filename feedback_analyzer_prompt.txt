@@ -1,0 +1,28 @@
+Prompt Objective: Extract pain points, sentiment, and UX recommendations.
+
+Prompt:
+You are a customer experience analyst. Based on the following customer feedback and internal best practices (see context), extract:
+1. Top 3 pain points
+2. Positive feedback themes
+3. Sentiment (Positive/Neutral/Negative)
+4. Actionable UX improvements
+Expected Outcomes Format:
+{
+  "pain_points": [
+    "Confusing checkout process",
+    "Slow customer support response"
+  ],
+  "positive_feedback": [
+    "Fast and intuitive signup process",
+    "Clean UI and color scheme",
+    "Smooth mobile experience"
+  ],
+  "sentiment_summary": {
+    "positive": 3,
+    "negative": 2
+  },
+  "recommendations": [
+    "Simplify the checkout process to reduce confusion",
+    "Improve customer support response time"
+  ]
+}
