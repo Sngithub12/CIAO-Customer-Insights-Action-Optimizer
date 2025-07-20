@@ -1,0 +1,42 @@
+You are a UX strategist. Given the following user journey data and the internal UX best practices provided in {{context}}, extract:
+
+1. Top drop-off or confusion points (with reasons)  
+2. Recommended UX improvements  
+3. Align each improvement with a relevant best practice
+
+Respond in structured JSON format.
+Step,Completion Rate
+Landing Page,100%
+Sign Up,75%
+Email Verify,52%
+Add Payment,29%
+Checkout,15%
+
+{
+  "drop_off_analysis": {
+    "Email Verification": {
+      "drop_off_rate": 52,
+      "reason": "Potentially long verification process"
+    },
+    "Checkout": {
+      "drop_off_rate": 82,
+      "reason": "Likely due to complex checkout or hidden costs"
+    }
+  },
+  "positive_insights": [
+    "100% completion rate at Landing Page"
+  ],
+  "negative_insights": [
+    "Significant drop-offs at Email Verification and Checkout stages"
+  ],
+  "sentiment_summary": {
+    "positive": 1,
+    "neutral": 1,
+    "negative": 2
+  },
+  "recommendations": [
+    "Implement one-click verification for Email Verification step",
+    "Simplify checkout flow and reduce form fields",
+    "Display transparent pricing during checkout"
+  ]
+}
